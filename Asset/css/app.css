@@ -1,0 +1,54 @@
+/* Learning Platform CSS */
+
+/* Importing Google Fonts */
+@font-face {
+  font-family: 'Rajdhani';
+  src:url(../fonts/Rajdhani-Font.woff2) format('woff2');
+}
+/* Image Logo */
+.lp-logo{
+  height: 195px;
+  width: 314px;
+}
+/* NavBar Css */
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+  background-color: #F0DDD6;
+}
+.nav-link{
+  color: #000 !important;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+}
+.nav-link:hover{
+  color: #997361 !important;
+  transition: 0.8s;
+}
+/* Dropdown Css */
+.dropdown-item{
+  color: #000;
+  font-family: 'Rajdhani', sans-serif;
+  transition: 0.5s;
+}
+.dropdown-item:hover{
+  color: #997361;
+  opacity: 0.5;
+  transition: 0.5s;
+  background-color: #fff;
+}
+.dropdown-menu{
+  border:none;
+  border-radius:unset;
+  padding: 0px;
+}
+.dropdown-divider{
+  color:#fff;
+  border: 1px solid #fff;
+}
+
+/* NavBar Toggle icon */
+.navbar-toggler{
+  border-radius: unset !important;
+  border: 1px solid #0c2744 !important;
+  opacity: 0.5 !important;
+}
