@@ -1,12 +1,19 @@
 </div>
 <!-- /End of Main Container -->
+<!-- Footer -->
+<div class="footer">
+  <footer class="footer text-center text-muted">
+    <p class="text-center">Copyright 2018 Staff &copy;</p>
+  </footer>
+</div>
+<!-- /Footer -->
 <?php
-  //Get Project folder full path
-  $fullPath = realpath($_SERVER['DOCUMENT_ROOT']);
-  $BS_jquery = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/jquery-3.3.1.slim.min.js';
-  $BS_popper = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/popper.min.js';
-  $BS_bootstrap = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/bootstrap.min.js';
-  $CustomJS = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/app.js';
+//Get Project folder full path
+$fullPath = realpath($_SERVER['DOCUMENT_ROOT']);
+$BS_jquery = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/jquery-3.3.1.slim.min.js';
+$BS_popper = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/popper.min.js';
+$BS_bootstrap = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/bootstrap.min.js';
+$CustomJS = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/app.js';
 ?>
 <!-- Bootstrap Main Scripts -->
 <script src="<?= $BS_jquery; ?>"></script>

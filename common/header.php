@@ -31,6 +31,41 @@
       <!-- Center Image Logo -->
       <img src="<?= $imagePath; ?>" class="rounded mx-auto d-block lp-logo" alt="Learning Platform Logo">
     </div>
+    <!-- Login Box -->
+    <div class="collapse hide" id="collapseLogin">
+      <div class="card card-body login-card">
+
+        <button
+           class="close btn-close"
+           data-toggle="collapse"
+           href="#collapseLogin">
+           <span aria-hidden="true">&times;</span>
+        </button>
+
+        <!-- Login Form -->
+        <form method="post">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter Username.." required/>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter Password.." required/>
+            </div>
+
+            <div class="form-group col-md-6">
+              <button type="submit" class="btn btn-default btn-login" id="btn-login">Login</button>
+            </div>
+
+          </div>
+
+        </form>
+        <!-- Login Form -->
+
+      </div>
+    </div>
     <!-- NavBar -->
       <nav class="navbar navbar-expand-md navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,7 +117,14 @@
                     </div>
                 </li>
                 <li class="nav-item pull-right">
-                  <a class="nav-link" href="#">Login</a>
+                  <a aria-expanded="true"
+                     aria-controls="collapseLogin"
+                     class="nav-link"
+                     data-toggle="collapse"
+                     href="#collapseLogin"
+                     role="button">
+                    Login
+                   </a>
                 </li>
               </ul>
         </div>

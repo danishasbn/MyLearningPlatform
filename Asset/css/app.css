@@ -5,6 +5,11 @@
   font-family: 'Rajdhani';
   src:url(../fonts/Rajdhani-Font.woff2) format('woff2');
 }
+/* IE 10 & 11 */
+@font-face {
+  font-family:'Rajdhani';
+  src: url(../fonts/rajdhani.light.ttf);
+}
 /* Image Logo */
 .lp-logo{
   height: 195px;
@@ -38,7 +43,7 @@
 }
 .dropdown-menu{
   border:none;
-  border-radius:unset;
+  border-radius:0px;
   padding: 0px;
 }
 .dropdown-divider{
@@ -51,4 +56,60 @@
   border-radius: unset !important;
   border: 1px solid #0c2744 !important;
   opacity: 0.5 !important;
+}
+
+/* Footer CSS */
+/* Fixed footer */
+.footer
+{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:2em;
+  background-color:transparent;
+}
+
+
+/* Login box card css */
+.login-card{
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:0px;
+  border-color: #F1E0DA;
+}
+
+/* Login Button */
+.btn-login{
+  color: #84685E;
+  background-color: #F0DED6;
+  border: 1px solid #D0B8B4;
+  border-radius: 0px;
+}
+
+.btn-login:hover{
+  color: #fff;
+  background-color: #81605E;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  transition: 0.5s;
+}
+
+/* Input Textbox Css */
+.form-control{
+  border-radius: 0px;
+  border-color:#D0B8B4;
+}
+
+/* Login Box Close Button */
+.btn-close{
+  display: flex;
+  justify-content: flex-end;
+  color: #000;
+}
+
+label{
+  font-family: 'Rajdhani';
+  font-weight: bold;
+  font-size: 12px;
 }
