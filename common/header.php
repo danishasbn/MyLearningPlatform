@@ -1,11 +1,12 @@
 <?php
     //Get Project folder full path
-    $fullPath = realpath($_SERVER['DOCUMENT_ROOT']);
-    $titleTabIcon = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/images/icons/title-tab-icon.png';
-    $imagePath = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/images/icons/logo.jpg';
+    $fullPath         = realpath($_SERVER['DOCUMENT_ROOT']);
+    $titleTabIcon     = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/images/icons/title-tab-icon.png';
+    $imagePath        = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/images/icons/logo.jpg';
     $bootstrapCssPath = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/bootstrap.min.css';
-    $AppCssPath = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/app.css';
-    $FontAwesomePath = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/fontawesome.css';
+    $AppCssPath       = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/app.css';
+    $FontAwesomePath  = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/fontawesome.css';
+    $AOSPath          = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/aos.css';
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -23,6 +24,8 @@
   <link href="<?= $AppCssPath; ?>" rel="stylesheet" type="text/css"/>
   <!-- Font Awesome -->
   <link href="<?= $FontAwesomePath; ?>" rel="stylesheet" type="text/css"/>
+  <!-- AOS Css -->
+  <link href="<?= $AOSPath; ?>" rel="stylesheet" type="text/css"/>
 </head>
 <body>
   <!-- Main Container -->
@@ -34,14 +37,13 @@
     <!-- Login Box -->
     <div class="collapse hide" id="collapseLogin">
       <div class="card card-body login-card">
-
+        <!-- Close button  -->
         <button
            class="close btn-close"
            data-toggle="collapse"
            href="#collapseLogin">
            <span aria-hidden="true">&times;</span>
         </button>
-
         <!-- Login Form -->
         <form method="post">
           <div class="form-row">

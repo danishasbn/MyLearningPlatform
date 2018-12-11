@@ -10,6 +10,12 @@
   font-family:'Rajdhani';
   src: url(../fonts/rajdhani.light.ttf);
 }
+
+@font-face {
+  font-family:'Great Vibes';
+  src: url(../fonts/GreatVibes-Regular.otf);
+}
+
 /* Image Logo */
 .lp-logo{
   height: 195px;
@@ -53,21 +59,21 @@
 
 /* NavBar Toggle icon */
 .navbar-toggler{
-  border-radius: unset !important;
+  border-radius: 0px !important;
   border: 1px solid #0c2744 !important;
   opacity: 0.5 !important;
 }
 
 /* Footer CSS */
 /* Fixed footer */
-.footer
+/* .footer
 {
   position:absolute;
   bottom:0;
   width:100%;
   height:2em;
   background-color:transparent;
-}
+} */
 
 
 /* Login box card css */
@@ -108,8 +114,76 @@
   color: #000;
 }
 
+/* default label */
 label{
   font-family: 'Rajdhani';
   font-weight: bold;
   font-size: 12px;
+}
+
+/* Banner with background image */
+.content-banner{
+  background: url('../images/bannerimg.jpg') no-repeat;
+  -webkit-background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  border-radius:0px;
+}
+
+/* Banner Text  */
+.banner-text{
+  border:1px solid #A48E87;
+  background-color:rgba(255,255,255,0.8);
+}
+/* Banner inner sub text */
+.lp-text{
+  font-family: 'Great Vibes';
+  color: #223521;
+  font-size:15px;
+}
+
+/* Hr border start */
+.hr-start{
+  border: 1px solid #EFDCD5;
+  width: 80%;
+  margin-top:40px;
+}
+/* Hr border end */
+.hr-end{
+  border: 1px solid #EFDCD5;
+  width: 50%;
+  margin-top:40px;
+}
+
+/* Card Flip using AOS  */
+.card-flip{
+  border-radius: 0px;
+  border:1px solid rgba(82,70,70,0.5);
+  margin-top: 25px;
+
+}
+.card-flip:hover{
+  background-color:#0C2744;
+  transition: 0.5s !important;
+  color:#fff;
+  cursor: pointer;
+}
+/* Custom Bullet points */
+.custom-bullet{
+  list-style-image: url('../images/icons/iconbullet.png');
+}
+/* <a href> tag */
+a{
+  text-decoration:none !important;
+  color: #BAA8A6;
+}
+a:hover{
+  color: #fff;
+  transition: 0.8s;
+}
+
+.category-txt{
+  font-family: Arial;
+
 }
