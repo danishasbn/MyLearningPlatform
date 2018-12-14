@@ -1,0 +1,27 @@
+How to connect your php to your sql server?
+
+step 1)
+
+Check the version of your PHP by typing localhost:8000/ and click on phpinfo.Example my PHP Version is 7.2.0
+
+step 2)
+Download the SQL SERVER Driver for your php version
+- I downloaded the 32bit instead of 64bit, the files are under "phpsql_ddl" folder
+- copy the files and paste it into your exe folder -> path: C:\xampp\php\ext
+
+step 3) Open php.ini and paste the following under extension
+        extension=php_pdo_sqlsrv_72_ts.dll
+        extension=php_sqlsrv_72_ts.dll
+
+step 4) Restart apache or your computer/laptop
+
+step 5) If error arises:
+
+        error 1) Login Failed -> Go to SQL SERVER management studio
+                              -> Expand the Security folder
+                              -> Right Click on NT AUTHORITY\SYSTEM
+                              -> Select Properties
+                              -> Go to User Mapping from the left side menu
+                              -> Choose your database for e.g. mine is MyLearningPlatform
+                              -> And check db_owner
+                              -> OK -> Run

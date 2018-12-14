@@ -19,7 +19,7 @@
   <div class="col-sm">
     <div class="card card-flip" data-aos="flip-right">
       <div class="card-body">
-        <h5 class="card-title"><img src="Asset/images/icons/iconbackend.png"/> Front-End Development </h5>
+        <h5 class="card-title"><img src="Asset/images/icons/iconbackend.png"/> Front-End Development</h5>
         <ul class="card-text custom-bullet">
           <li><a href="#">HTML</a></li>
           <li><a href="#">CSS</a></li>

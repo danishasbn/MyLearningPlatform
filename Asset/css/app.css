@@ -68,11 +68,11 @@
 /* Fixed footer */
 /* .footer
 {
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:2em;
-  background-color:transparent;
+position:absolute;
+bottom:0;
+width:100%;
+height:2em;
+background-color:transparent;
 } */
 
 
@@ -161,13 +161,15 @@ label{
   border-radius: 0px;
   border:1px solid rgba(82,70,70,0.5);
   margin-top: 25px;
-
 }
 .card-flip:hover{
   background-color:#0C2744;
   transition: 0.5s !important;
   color:#fff;
   cursor: pointer;
+}
+.card-flip:hover a{
+  color:#BDABA9;
 }
 /* Custom Bullet points */
 .custom-bullet{
@@ -176,10 +178,10 @@ label{
 /* <a href> tag */
 a{
   text-decoration:none !important;
-  color: #BAA8A6;
+  color:#000;
 }
 a:hover{
-  color: #fff;
+  color: #fff !important;
   transition: 0.8s;
 }
 
