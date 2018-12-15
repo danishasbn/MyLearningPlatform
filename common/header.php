@@ -1,14 +1,14 @@
 <?php
-// connection to database server
-require('database/dbconnect.php');
 //Get Project folder full path
 $fullPath         =  realpath($_SERVER['DOCUMENT_ROOT']);
 $titleTabIcon     = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/images/icons/title-tab-icon.png';
+$dbconnect        = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/database/dbconnect.php';
 $imagePath        = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/images/icons/logo.jpg';
 $bootstrapCssPath = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/bootstrap.min.css';
 $AppCssPath       = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/app.css';
 $FontAwesomePath  = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/fontawesome.css';
 $AOSPath          = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/aos.css';
+$homepage         = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/index.php';
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -78,7 +78,7 @@ $AOSPath          = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlat
     <div class="navbar-collapse collapse justify-content-center order-2" id="navbarCollapse">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+          <a class="nav-link" href="<?= $homepage; ?>">Home <span class="sr-only">Home</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="frontend-drop">Front-End Development</a>

@@ -5,6 +5,10 @@
   font-family: 'Rajdhani';
   src:url(../fonts/Rajdhani-Font.woff2) format('woff2');
 }
+@font-face {
+  font-family: 'PT-Sans';
+  src:url(../fonts/PT-Sans.woff2.woff2) format('woff2');
+}
 /* IE 10 & 11 */
 @font-face {
   font-family:'Rajdhani';
@@ -64,18 +68,6 @@
   opacity: 0.5 !important;
 }
 
-/* Footer CSS */
-/* Fixed footer */
-/* .footer
-{
-position:absolute;
-bottom:0;
-width:100%;
-height:2em;
-background-color:transparent;
-} */
-
-
 /* Login box card css */
 .login-card{
   width: 50%;
@@ -116,7 +108,7 @@ background-color:transparent;
 
 /* default label */
 label{
-  font-family: 'Rajdhani';
+  font-family: 'Rajdhani',Arial;
   font-weight: bold;
   font-size: 12px;
 }
@@ -138,7 +130,7 @@ label{
 }
 /* Banner inner sub text */
 .lp-text{
-  font-family: 'Great Vibes';
+  font-family: 'Great Vibes',Arial;
   color: #223521;
   font-size:15px;
 }
@@ -185,7 +177,13 @@ a:hover{
   transition: 0.8s;
 }
 
+/* Homepage subtext to choose category */
 .category-txt{
   font-family: Arial;
+}
 
+/* Html Page CSS */
+.text-everthing{
+  font-family: 'PT-Sans',Arial;
+  color:#0B2844;
 }
