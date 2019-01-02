@@ -11,14 +11,14 @@ if($conn) {
      die(print_r(sqlsrv_errors(), true));
 }
 //
-// $sql = "SELECT * from tbl_test";
+// $sql = "SELECT * from tbl_comments";
 // $qry = sqlsrv_query($conn, $sql);
 //
 // if($qry){
 //
 // while($row = sqlsrv_fetch_array($qry))
 // {
-//      echo $row['name'];
+//      echo $row['message'];
 // }
 // }
 // else {

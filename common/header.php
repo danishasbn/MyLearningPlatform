@@ -2,14 +2,18 @@
 //Get Project folder full path
 $fullPath         =  realpath($_SERVER['DOCUMENT_ROOT']);
 $titleTabIcon     = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/images/icons/title-tab-icon.png';
-$dbconnect        = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/database/dbconnect.php';
 $imagePath        = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/images/icons/logo.jpg';
 $bootstrapCssPath = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/bootstrap.min.css';
 $AppCssPath       = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/app.css';
 $FontAwesomePath  = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/fontawesome.css';
 $AOSPath          = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/css/aos.css';
 $homepage         = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/index.php';
+$jQuery           = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Asset/js/jquery-3.3.1.min.js';
+
+$ajax             = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlatform/Languages/Back-End-Development/AJAX/index.php';
+require($_SERVER['DOCUMENT_ROOT'].'/MyLearningPlatform/database/dbconnect.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -28,6 +32,8 @@ $homepage         = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlat
   <link href="<?= $FontAwesomePath; ?>" rel="stylesheet" type="text/css"/>
   <!-- AOS Css -->
   <link href="<?= $AOSPath; ?>" rel="stylesheet" type="text/css"/>
+  <!-- jQuery -->
+  <script src="<?= $jQuery;?>"></script>
 </head>
 <body>
   <!-- Main Container -->
@@ -99,6 +105,8 @@ $homepage         = 'http://localhost:'.$_SERVER['SERVER_PORT'].'/MyLearningPlat
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" id="backend-drop">Back-End Development</a>
           <div class="dropdown-menu mt-0" aria-labelledby="backend-drop">
+            <a class="dropdown-item" href="<?= $ajax;?>">AJAX</a>
+            <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">SQL</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">PHP</a>

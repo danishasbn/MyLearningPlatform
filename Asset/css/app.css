@@ -173,7 +173,7 @@ a{
   color:#000;
 }
 a:hover{
-  color: #fff !important;
+  color: #0C2742 !important;
   transition: 0.8s;
 }
 
@@ -186,4 +186,9 @@ a:hover{
 .text-everthing{
   font-family: 'PT-Sans',Arial;
   color:#0B2844;
+}
+
+/* Ajax Homepage */
+.ajax li a:hover{
+  color: green!important;
 }
